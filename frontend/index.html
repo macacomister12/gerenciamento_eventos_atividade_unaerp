@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos Acadêmicos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Eventos acadêmicos</h1>
+    <p>Palestras, workshops e jornadas do campus.</p>
+  </header>
+
+  <main class="layout">
+    <section aria-labelledby="titulo-lista">
+      <h2 id="titulo-lista">Próximos eventos</h2>
+      <p id="status" class="status" role="status">Carregando eventos…</p>
+      <ul id="lista" class="lista"></ul>
+    </section>
+
+    <section class="painel" aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Cadastrar evento</h2>
+      <form id="form-evento">
+        <label for="titulo">Título</label>
+        <input id="titulo" name="titulo" maxlength="150" required>
+
+        <label for="data">Data</label>
+        <input id="data" name="data" type="date" required>
+
+        <label for="local">Local</label>
+        <input id="local" name="local" maxlength="100" required>
+
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+        <button type="submit" id="botao">Cadastrar evento</button>
+        <p id="mensagem" class="mensagem" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
