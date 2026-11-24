@@ -1,4 +1,3 @@
-// Troque pela URL pública da API no Render (sem barra no final)
 const API_URL = 'https://gerenciamento-eventos-atividade-unaerp.onrender.com';
 
 const lista = document.getElementById('lista');
